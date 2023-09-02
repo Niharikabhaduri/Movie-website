@@ -1,0 +1,348 @@
+/* RESET */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    color:aliceblue;
+    background-color: rgb(3, 3, 31);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* NAVBAR */
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    position:fixed;
+    top:0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+    background-color:rgb(3, 3, 31) ;
+  }
+  #logo {
+    width: 20vw;
+    display: flex;
+  }
+  
+  #logo img {
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 10px;
+    width: auto;
+    max-width: 150px;
+  }
+  
+  #logo p {
+    color: white;
+    margin-top: 25px;
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #search {
+    width: 20vw;
+    height: 30px;
+    margin-left: auto;
+    display: flex;
+    margin-top: 15px;
+    background-color: #12183f;
+    border-radius: 8px;
+  }
+  
+  #input {
+    background-color: transparent;
+    width: 85%;
+    color: white;
+    border-style: hidden;
+    outline: none;
+  }
+  
+  #lens {
+    margin-top: 8px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  #mic {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: 5px;
+    color: white;
+  }
+  
+  #user {
+    width: 13vw;
+    display: flex;
+  }
+  
+  #bell {
+    margin-top: 20px;
+    margin-left: 40px;
+    color: #e7e7e6;
+  }
+  
+  #dot {
+    color: red;
+    height: 1px;
+    width: 1px;
+    margin-top: 20px;
+    margin-left: -5px;
+    font-size: 6px;
+  }
+  
+  #user img {
+    height: 45px;
+    width: 45px;
+    margin-left: auto;
+    margin-right: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  
+
+
+/* SECTION-MAIN-PAGE */
+#main-page{
+    display : grid;
+    grid-template-columns: 70% 30%;
+}
+
+/* SECTION - 1 */
+#section-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    margin-top: 100px;
+}
+
+/* DESCRIPTION */
+#description{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 90%;
+    justify-content: center;
+    gap: 2rem;
+    align-items:center;
+    background-color: rgb(4, 4, 63);
+    margin: 2rem;
+    margin-bottom: 2rem;
+    overflow: auto;
+    position: relative;
+}
+#description div img{
+    height: 22rem;
+    width: 22rem;
+}
+.singer-desc{
+    position: relative;
+    padding: 1rem;
+}
+.singer-desc h1{
+    position:absolute;
+    top: 0%;
+    left:0%;
+    font-size: 25px;
+}
+.singer-desc h6{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+.singer-desc-2{
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.singer-desc-3{
+    padding: 2rem;
+    padding-top: 0;
+    padding-left: 0;
+
+}
+.singer-desc-4{
+    position: relative;
+
+}
+div.singer-desc-4 button{
+    padding:  0.5rem 1rem;
+    width: 7rem;
+    background-image: linear-gradient(to top left,rgb(71, 71, 176), rgb(207, 123, 207));
+    color: aliceblue;
+}
+div.singer-desc-4 h4{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+.singer-desc-5{
+    padding-top: 0.5rem;
+}
+
+/* DESCRIPTION-MUSIC */
+.description-music{
+    position: relative;
+    width: 90%;
+    height: 6rem;
+    margin:2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(6, 6, 47);
+    overflow: auto;
+}
+.description-music div p.number{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+}
+.description-music div img{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    border-radius: 5px;
+}
+.description-music div h4{
+    position: absolute;
+    left: 12%;
+    top: 20%;
+}
+.description-music div p.about{
+    position: absolute;
+    left: 12%;
+    top: 45%;
+    font-size: 0.8rem;
+}
+.description-music div a .fa-heart{
+    color: aliceblue;
+    position: absolute;
+    top:40%;
+    right: 10%;
+}
+.description-music div a .fa-plus{
+    color: aliceblue;
+    position: absolute;
+    top:40%;
+    right: 5%;
+}
+
+
+/* SECTION-2 */
+
+#section-2{
+    margin-top: 80px;
+    position:fixed;
+    top:0;
+    right: 0;
+    left: 70%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding-top: 2rem;
+    max-height: 100%;
+    overflow-y: auto;
+    
+}
+/* SIMILAR ARTISTS*/
+
+.artists-desc{
+    position: relative;
+
+}
+.artists-desc p{
+    position: absolute;
+    left: 23%;
+    top:0;
+    right: 0;
+    font-size:small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.artists-desc h1{
+    font-size:larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#artists{
+    position : relative;
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+
+}
+#artists img{
+    border-radius: 5px;
+    height: 6em;
+}
+#artists h4{
+    position:absolute;
+    top: 20%;
+    left: 8%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+#artists p{
+    position:absolute;
+    top: 40%;
+    left: 8%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+#artists a {
+    color: aliceblue;
+    position: absolute;
+    left: 28%;
+}
+#artists p.number-1{
+    position:absolute;
+    left: 27.5%;
+}
+
+/* Recently Played*/
+
+#recently-played{
+    position: relative;
+    margin-top: 2rem;
+}
+#recently-played h1{
+    font-size:larger;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#recently-played p{
+    font-size:small;
+    position: absolute;
+    left: 23%;
+    top:0;
+    right: 0;
+}
+#played-all {
+    position: relative;
+    height: 3rem;
+}
+#played-all > *{
+    display: inline-block;
+    position: absolute;
+    padding: 2em;
+}
+i{
+    color: aliceblue;
+}
+#played-all p.number{
+    top: 10%;
+    left: 0%;
+}
+#played-all img{
+    top: 0%;
+    left: 2%;
+}
+#played-all div{
+    top: 5%;
+    left: 8%;
+}
+#played-all a{
+    top: 5%;
+    left: 20.5%;
+}
